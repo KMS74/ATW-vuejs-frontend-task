@@ -34,26 +34,34 @@ import TabItem from '../components/TabItem.vue'
 import TabsContainer from '../components/TabsContainer.vue'
 import EmailCTA from '../components/EmailCTA.vue'
 import TheFooter from '../components/TheFooter.vue'
+import portofolioImage from "../assets/images/portofolio.jpg"
+import lummyImage from "../assets/images/lummy.jpg"
+import keeperImage from "../assets/images/keeper.jpg"
+import planImage from "../assets/images/plans-g187d0953c_640.jpg"
+
+
+
 
 export default {
+
   data() {
     return {
       projects: [
         {
           title: 'Ant - Personal Portofolio',
-          imagePath: 'src/assets/images/portofolio.jpg'
+          imagePath: portofolioImage
         },
         {
           title: 'Lumy - Dashboard UI Kit',
-          imagePath: 'src/assets/images/lummy.jpg'
+          imagePath: lummyImage
         },
         {
           title: 'Keeper - Soccer Site',
-          imagePath: 'src/assets/images/keeper.jpg'
+          imagePath: keeperImage
         },
         {
           title: 'Minify - Web Design',
-          imagePath: 'src/assets/images/plans-g187d0953c_640.jpg'
+          imagePath: planImage
         }
       ]
     }
