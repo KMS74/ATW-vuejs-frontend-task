@@ -1,7 +1,7 @@
 <template>
   <div class="not-found">
     <div class="not-found__img">
-      <img src="../assets/images/404 Error Page not Found.png" alt="">
+      <img src="../assets/images/not-found.png" alt="">
     </div>
     <RouterLink to="/projects" class="not-found__btn">Go Home</RouterLink>
   </div>
