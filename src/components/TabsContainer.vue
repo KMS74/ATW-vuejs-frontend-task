@@ -1,9 +1,18 @@
 <template>
   <div class="tabs">
     <ul class="tabs__header">
-      <li class="tabs_header-item" v-for="tab in tabs" :key="tab" :class="{ 'is-active': tab.isActive }">
-        <a :class="{ 'active-tab': tab.isActive }" class="tabs__header-link" @click="selectTab(tab)">{{
-          tab.name }}</a>
+      <li
+        class="tabs_header-item"
+        v-for="tab in tabs"
+        :key="tab"
+        :class="{ 'is-active': tab.isActive }"
+      >
+        <a
+          :class="{ 'active-tab': tab.isActive }"
+          class="tabs__header-link"
+          @click="selectTab(tab)"
+          >{{ tab.name }}</a
+        >
       </li>
     </ul>
   </div>
@@ -19,7 +28,7 @@ export default {
   data() {
     return { tabs: [] }
   },
-  created() { },
+  created() {},
   methods: {
     selectTab(selectedTab) {
       this.tabs.forEach((tab) => {
@@ -58,16 +67,15 @@ export default {
 
 @media (max-width: 600px) {
   .tabs__header {
-    gap: 4rem;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .tabs__header-link.active-tab,
   .tabs__header-link:hover {
     border-bottom: 2px solid #eebf63;
-  }
-
-  .tabs__header-link {
-    font-size: 2rem;
   }
 }
 </style>

@@ -2,10 +2,19 @@
   <div class="cta">
     <p class="cta__text">Interested working with me?</p>
     <button class="cta__btn">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-        class="cta__btn-icon">
-        <path stroke-linecap="round" stroke-linejoin="round"
-          d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        class="cta__btn-icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+        />
       </svg>
 
       <span class="cta__btn-text">Email Me</span>
@@ -75,11 +84,22 @@ export default {}
     gap: 2rem;
     text-align: center;
     padding: 2.4rem;
-
   }
 
   .cta__text {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 435px) {
+  .cta {
+    margin-bottom: 10rem;
+  }
+  .cta__text {
+    font-size: 2.5rem;
+  }
+  .cta__btn-text {
+    font-size: 1.6rem;
   }
 }
 </style>

@@ -4,21 +4,33 @@
   <TabsContainer>
     <TabItem name="Web Design" :selected="true">
       <div class="recent-projects">
-        <ProjectCard v-for="project of projects" :key="project.title" :title="project.title"
-          :imagePath="project.imagePath" />
+        <ProjectCard
+          v-for="project of projects"
+          :key="project.title"
+          :title="project.title"
+          :imagePath="project.imagePath"
+        />
       </div>
     </TabItem>
     <TabItem name="Mobile App Design">
       <!-- we shuffled the projects array to simulte displaying diffrent content inside each TabItem -->
       <div class="recent-projects">
-        <ProjectCard v-for="project of shuffledArr(projects)" :key="project.title" :title="project.title"
-          :imagePath="project.imagePath" />
+        <ProjectCard
+          v-for="project of shuffledArr(projects)"
+          :key="project.title"
+          :title="project.title"
+          :imagePath="project.imagePath"
+        />
       </div>
     </TabItem>
     <TabItem name="Freebies">
       <div class="recent-projects">
-        <ProjectCard v-for="project of shuffledArr(projects)" :key="project.title" :title="project.title"
-          :imagePath="project.imagePath" />
+        <ProjectCard
+          v-for="project of shuffledArr(projects)"
+          :key="project.title"
+          :title="project.title"
+          :imagePath="project.imagePath"
+        />
       </div>
     </TabItem>
   </TabsContainer>
@@ -34,16 +46,12 @@ import TabItem from '../components/TabItem.vue'
 import TabsContainer from '../components/TabsContainer.vue'
 import EmailCTA from '../components/EmailCTA.vue'
 import TheFooter from '../components/TheFooter.vue'
-import portofolioImage from "../assets/images/portofolio.jpg"
-import lummyImage from "../assets/images/lummy.jpg"
-import keeperImage from "../assets/images/keeper.jpg"
-import planImage from "../assets/images/plans-g187d0953c_640.jpg"
-
-
-
+import portofolioImage from '../assets/images/portofolio.jpg'
+import lummyImage from '../assets/images/lummy.jpg'
+import keeperImage from '../assets/images/keeper.jpg'
+import planImage from '../assets/images/plans-g187d0953c_640.jpg'
 
 export default {
-
   data() {
     return {
       projects: [
